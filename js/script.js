@@ -31,7 +31,8 @@ var swiper = new Swiper(".mySwiper", {
 
 
 let musicBtn = document.getElementById("musicBtn"),
-    music = document.querySelector("#leftModal")
+    music = document.querySelector("#leftModal"),
+    cover = document.querySelector("#downModal")
 
 musicBtn.onclick = _ => {
   console.log(music);
@@ -39,3 +40,10 @@ musicBtn.onclick = _ => {
 }
 
 window.onclick = e => e.target.classList.contains("music") ? e.target.classList.remove("show") : ""
+
+window.onload = _ =>{
+  setTimeout(()=>{
+    cover.classList.add("show")
+  },500)
+}
+window.onclick = e => e.target.classList.contains("cover") ? e.target.classList.remove("show") : ""
