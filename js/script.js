@@ -25,7 +25,7 @@ var swiper = new Swiper(".mySwiper", {
         },
     },
     autoplay: true,
-    speed: 800,
+    speed: 1000,
     autoplayDisableOnInteraction: false
   });
 
