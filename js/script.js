@@ -41,9 +41,8 @@ musicBtn.onclick = _ => {
 
 window.onclick = e => e.target.classList.contains("music") ? e.target.classList.remove("show") : ""
 
-window.onload = _ =>{
   setTimeout(()=>{
     cover.classList.add("show")
   },500)
-}
+
 window.onclick = e => e.target.classList.contains("cover") ? e.target.classList.remove("show") : ""
