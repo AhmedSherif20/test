@@ -32,11 +32,15 @@ var swiper = new Swiper(".mySwiper", {
 
 let musicBtn = document.getElementById("musicBtn"),
     music = document.querySelector("#leftModal"),
+    videoBtn = document.getElementById("videoBtn"),
+    video = document.querySelector("#rightModal"),
     cover = document.querySelector("#downModal")
 
 musicBtn.onclick = _ => {
-  console.log(music);
   music.classList.add("show")
+}
+videoBtn.onclick = _ => {
+  video.classList.add("show")
 }
 
 
@@ -49,7 +53,12 @@ window.onclick = e => {
   if( e.target.classList.contains("cover"))
   {
     e.target.classList.remove("show")
-  }else if(e.target.classList.contains("music"))
+  }
+  else if(e.target.classList.contains("music"))
+  {
+    e.target.classList.remove("show")
+  }
+  else if(e.target.classList.contains("video"))
   {
     e.target.classList.remove("show")
   }
