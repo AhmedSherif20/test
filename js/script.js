@@ -25,7 +25,7 @@ var swiper = new Swiper(".mySwiper", {
         },
     },
     autoplay: true,
-    speed: 2000,
+    speed: 1000,
     autoplayDisableOnInteraction: true
   });
 
@@ -43,10 +43,9 @@ videoBtn.onclick = _ => {
   video.classList.add("show")
 }
 
-
-  setTimeout(()=>{
-    cover.classList.add("show")
-  },500)
+setTimeout(()=>{
+  cover.classList.add("show")
+},500)
 
 
 window.onclick = e => {
